@@ -9,9 +9,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+pythonenv*
 
 # Jupyter Notebooks
 .ipynb_checkpoints
+*.ipynb_checkpoints
 */.ipynb_checkpoints/*
 !*.ipynb
 
@@ -21,19 +23,28 @@ venv.bak/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
 
-# Data files (if you don't want to commit datasets)
+# Data files (don't commit large datasets)
 *.csv
 *.data
 *.pkl
 *.h5
+*.joblib
+*.zip
+*.gz
+*.tar
 
-# Output/Images
+# Images/Outputs
 /output/
-*.png
-*.jpg
-*.jpeg
+images/*.png
+images/*.jpg
+images/*.jpeg
+!images/README.md
+
+# Virtual Environment
+venv/
+env/
+
+# Logs
+*.log
