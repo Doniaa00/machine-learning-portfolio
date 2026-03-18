@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+!*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data files (don't commit large datasets)
+*.csv
+*.data
+*.pkl
+*.h5
+*.joblib
+*.zip
+*.gz
+*.tar
+
+# Images/Outputs
+/output/
+images/*.png
+images/*.jpg
+images/*.jpeg
+!images/README.md
+
+# Virtual Environment
+venv/
+env/
+
+# Logs
+*.log
