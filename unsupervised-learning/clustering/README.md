@@ -1,8 +1,8 @@
-# 🔍 Clustering Projects
+# 🔍 Clustering Project
 
 This folder contains clustering projects for unsupervised learning.
 
-## Projects
+## Project
 
 ### 1. Customer Segmentation (`01_customer_segmentation.ipynb`)
 - **Goal**: Segment customers based on income and spending behavior
