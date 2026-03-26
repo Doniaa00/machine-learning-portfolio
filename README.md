@@ -1,27 +1,59 @@
-# 🤖 Machine Learning Portfolio
+#  Machine Learning Portfolio
 
 A comprehensive collection of machine learning projects demonstrating supervised and unsupervised learning techniques, plus a complete end-to-end practical project.
 
-## 📋 Project Overview
+##  Project Overview
 
 This repository contains practical implementations of various machine learning algorithms on real-world datasets. Each project includes data exploration, model building, evaluation, and interpretation of results.
 
 ## 📁 Repository Structure
 machine-learning-portfolio/
 │
-├── supervised-learning/ # Supervised learning projects
-│ ├── classification/ # Classification algorithms
-│ └── regression/ # Regression algorithms
+├── 📁 supervised-learning/
+│   ├── 📁 classification/
+│   │   ├── iris-classification/
+│   │   │   ├── iris.csv
+│   │   │   ├── iris_classification.ipynb
+│   │   │   └── README.md
+│   │   └── diabetes-diagnosis/
+│   │       ├── diabetes.csv
+│   │       ├── diabetes_diagnosis.ipynb
+│   │       └── README.md
+│   │
+│   └── 📁 regression/
+│       ├── california-housing-linear/
+│       │   ├── housing.csv
+│       │   ├── california_housing_linear.ipynb
+│       │   └── README.md
+│       └── california-housing-rf/
+│           ├── housing.csv
+│           ├── california_housing_rf.ipynb
+│           └── README.md
 │
-├── unsupervised-learning/ # Unsupervised learning projects
-│ ├── clustering/ # Clustering algorithms
+├── 📁 unsupervised-learning/
+│   └── 📁 clustering/
+│       └── customer-segmentation/
+│           ├── mall_customers.csv
+│           ├── customer_segmentation.ipynb
+│           └── README.md
 │
-├── practical-project/ # End-to-end project
-│ └── customer-segmentation-project/
+├── 📁 practical-projects/
+│   ├── 📁 Heart-Disease-Prediction/
+│   │   ├── heart.csv
+│   │   ├── Heart_Disease_mini_project.ipynb
+│   │   ├── Heart_Disease_Report.docx
+│   │   ├── Heart_Disease_Presentation.pdf
+│   │   └── README.md
+│   │
+│   └── 📁 Customer-Segmentation-Project/
+│       ├── customers.csv
+│       ├── customer_segmentation_project.ipynb
+│       ├── segmentation_report.docx
+│       ├── segmentation_presentation.pdf
+│       └── README.md
 │
-├── images/ # Generated visualizations
-└── requirements.txt # Python dependencies
-
+├── requirements.txt               # Dependencies
+└── README.md                      # This file
 
 ## 🎯 Projects Included
 
@@ -43,6 +75,7 @@ machine-learning-portfolio/
 
 ### Practical Project
 6. **Complete Customer Segmentation Project** - End-to-end analysis with business recommendations
+7. **Heart-Disease-Prediction** - End-to-end analysis to Predict cardiovascular disease risk using patient clinical data
 
 ## 🛠️ Technologies Used
 
