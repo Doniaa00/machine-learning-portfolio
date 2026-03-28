@@ -10,50 +10,49 @@ This repository contains practical implementations of various machine learning a
 machine-learning-portfolio/
 │
 ├── 📁 supervised-learning/
-│   ├── 📁 classification/
-│   │   ├── iris-classification/
-│   │   │   ├── iris.csv
-│   │   │   ├── iris_classification.ipynb
-│   │   │   └── README.md
-│   │   └── diabetes-diagnosis/
-│   │       ├── diabetes.csv
-│   │       ├── diabetes_diagnosis.ipynb
-│   │       └── README.md
-│   │
-│   └── 📁 regression/
-│       ├── california-housing-linear/
-│       │   ├── housing.csv
-│       │   ├── california_housing_linear.ipynb
-│       │   └── README.md
-│       └── california-housing-rf/
-│           ├── housing.csv
-│           ├── california_housing_rf.ipynb
-│           └── README.md
+│ ├── 📁 classification/
+│ │ ├── iris-classification/
+│ │ │ ├── iris.csv
+│ │ │ ├── iris_classification.ipynb
+│ │ │ └── README.md
+│ │ │
+│ │ └── diabetes-diagnosis/
+│ │ ├── diabetes.csv
+│ │ ├── diabetes_diagnosis.ipynb
+│ │ └── README.md
+│ │
+│ └── 📁 regression/
+│ ├── california-housing-linear/
+│ │ ├── housing.csv
+│ │ ├── california_housing_linear.ipynb
+│ │ └── README.md
+│ │
+│ └── california-housing-rf/
+│ ├── housing.csv
+│ ├── california_housing_rf.ipynb
+│ └── README.md
 │
 ├── 📁 unsupervised-learning/
-│   └── 📁 clustering/
-│       └── customer-segmentation/
-│           ├── mall_customers.csv
-│           ├── customer_segmentation.ipynb
-│           └── README.md
+│ └── 📁 clustering/
+│ └── customer-segmentation/
+│ ├── mall_customers.csv
+│ ├── customer_segmentation.ipynb
+│ └── README.md
 │
 ├── 📁 practical-projects/
-│   ├── 📁 Heart-Disease-Prediction/
-│   │   ├── heart.csv
-│   │   ├── Heart_Disease_mini_project.ipynb
-│   │   ├── Heart_Disease_Report.docx
-│   │   ├── Heart_Disease_Presentation.pdf
-│   │   └── README.md
-│   │
-│   └── 📁 Customer-Segmentation-Project/
-│       ├── customers.csv
-│       ├── customer_segmentation_project.ipynb
-│       ├── segmentation_report.docx
-│       ├── segmentation_presentation.pdf
-│       └── README.md
-│
-├── requirements.txt               # Dependencies
-└── README.md                      # This file
+│ ├── 📁 Heart-Disease-Prediction/
+│ │ ├── heart.csv
+│ │ ├── Heart_Disease_mini_project.ipynb
+│ │ ├── Heart_Disease_Report.docx
+│ │ ├── Heart_Disease_Presentation.pdf
+│ │ └── README.md
+│ │
+│ └── 📁 Customer-Segmentation-Project/
+│ ├── customers.csv
+│ ├── customer_segmentation_project.ipynb
+│ ├── segmentation_report.docx
+│ ├── segmentation_presentation.pdf
+│ └── README.md
 
 ## 🎯 Projects Included
 
