@@ -115,7 +115,19 @@ The dataset has a slight class imbalance (55.3% disease). More critically, a **F
 
 **Winner: Random Forest** — Best balance of Recall and F1-Score. Catches **9 out of 10 sick patients**.
 
-Hyperparameter tuning with `GridSearchCV` further improved Recall and F1-Score by optimizing `n_estimators`, `max_depth`, `min_samples_split`, and `min_samples_leaf`.
+### After tuning (`GridSearchCV`, 5-fold stratified CV, 36 candidates)
+
+Best parameters: `n_estimators=300`, `max_depth=8`, `min_samples_split=10` (best CV F1: 0.877).
+
+| Metric | Default RF | Tuned RF | Change |
+|--------|-----------|----------|--------|
+| Accuracy | 0.875 | 0.880 | +0.005 |
+| Precision | 0.876 | 0.877 | +0.001 |
+| **Recall** | 0.902 | **0.912** | +0.010 |
+| F1-Score | 0.889 | 0.894 | +0.005 |
+| AUC-ROC | 0.923 | 0.929 | +0.006 |
+
+The gains are small — on a 184-patient test set, +0.010 recall is one more sick patient caught — so the main value of tuning here is confirming the default model was already close to its best configuration.
 
 ---
 
@@ -136,22 +148,17 @@ Hyperparameter tuning with `GridSearchCV` further improved Recall and F1-Score b
 ## 📁 Repository Structure
 
 ```
-heart-disease-prediction/
-├── README.md                          ← This file
-├── requirements.txt                   ← Python dependencies
-├── .gitignore                         ← Files to exclude
-├── heart.csv                          ← Dataset (918 patients, 11 features)
-├── Heart_Disease_mini_project.ipynb   ← Complete Jupyter notebook
-├── Heart_Disease_Report.docx          ← Full written report
-├── Heart_Disease_Presentation.pdf     ← 5-minute presentation slides
-├── model/
-│   └── heart_model.pkl                ← Saved trained Random Forest model
-└── images/
-    ├── silent_ischemia_chart.png
-    ├── feature_importance.png
-    ├── roc_curves.png
-    └── confusion_matrix.png
+Heart-Disease-Prediction/
+├── README.md                                 ← This file
+├── requirements.txt                          ← Python dependencies (pinned)
+├── .gitignore
+├── LICENSE
+├── Heart_Disease_mini project.ipynb          ← Complete Jupyter notebook
+├── Heart_Disease_Report.docx                 ← Full written report
+└── Heart Disease Prediction presentation.pdf ← Presentation slides
 ```
+
+> The dataset (`heart.csv`) is not included — see *How to Run* below.
 
 ---
 
@@ -159,24 +166,25 @@ heart-disease-prediction/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/heart-disease-prediction.git
-cd heart-disease-prediction
+git clone https://github.com/Doniaa00/machine-learning-portfolio.git
+cd machine-learning-portfolio/practical-projects/Heart-Disease-Prediction
 ```
 
 ### 2. Install dependencies
 ```bash
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Launch the notebook
+### 3. Get the dataset
+Download `heart.csv` from [Kaggle — Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) and place it in this folder, next to the notebook.
+
+### 4. Launch the notebook and run all cells
 ```bash
-jupyter notebook Heart_Disease_mini_project.ipynb
+jupyter notebook "Heart_Disease_mini project.ipynb"
 ```
-
-### 4. Run all cells
-`Kernel → Restart & Run All`
-
-> The notebook is self-contained — it loads the dataset, runs the full pipeline, and saves the trained model to `model/heart_model.pkl`.
+Then `Kernel → Restart & Run All`.
 
 ---
 
